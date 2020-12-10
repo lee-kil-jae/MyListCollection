@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyListCollection</string>
+    <string name="listtype_default">기본 타입</string>
+    <string name="listtype_multi">멀티 타입</string>
+    <string name="listtype_multi_paging">멀티 + 페이징</string>
+    <string name="room_data_add">ROOM에 데이터 추가</string>
+    <string name="listtype_multi_room">멀티 + ROOM</string>
+    <string name="index">Index</string>
+    <string name="title">Title</string>
+</resources>

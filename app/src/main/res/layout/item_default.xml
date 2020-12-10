@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="data"
+            type="com.kiljae.mylistcollection.common.data.DataDefault" />
+        <variable
+            name="vmDefault"
+            type="com.kiljae.mylistcollection.viewmodel.DefaultViewModel" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:onClick="@{()-> vmDefault.onClickItem(data)}">
+        <TextView
+            android:id="@+id/txvIndex"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textSize="@dimen/dp20"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:text="@{String.valueOf(data.index)}"
+            android:background="@drawable/dra_round20_orange"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:id="@+id/txvTitle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/dp20"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlackCherry"
+            android:text="@{data.title}"
+            app:layout_constraintStart_toEndOf="@+id/txvIndex"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txvIndex"
+            app:layout_constraintBottom_toBottomOf="@+id/txvIndex"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
