@@ -57,20 +57,4 @@ class RoomPagingDefaultDataSource private constructor(val database: MyDao): Item
         return itemKey
     }
 
-
-    private fun createItems(offset: Int, loadSize: Int): List<DataDefault>{
-        val items = mutableListOf<DataDefault>()
-        for(idx in offset .. (offset+loadSize-1)){
-            items.add(
-                    DataDefault(
-                            idx+1,
-                            "Title ${idx+1}",
-                            "Description blabla umum..."
-                    )
-            )
-        }
-
-        return items
-    }
-
 }
