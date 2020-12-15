@@ -5,6 +5,7 @@
     <string name="listtype_multi_paging">멀티 + 페이징</string>
     <string name="room_data_add">ROOM에 데이터 추가</string>
     <string name="listtype_multi_room">멀티 + ROOM</string>
+    <string name="listtype_multi_room_paging">멀티 + ROOM + Paging</string>
     <string name="index">Index</string>
     <string name="title">Title</string>
 </resources>

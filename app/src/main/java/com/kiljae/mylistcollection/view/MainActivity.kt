@@ -12,7 +12,6 @@ import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
-    var offset = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -31,11 +30,12 @@ class MainActivity : AppCompatActivity() {
 
         btnRoomAdd.setOnClickListener {
             GlobalScope.launch(Dispatchers.IO) {
-                offset += 1
+                val offset = MyDatabase.getInstance(this@MainActivity).myDao().getCount() + 1
                 MyDatabase.getInstance(this@MainActivity).myDao().insert(
                     DataDefault(
-                        title = "TITLE ${offset}",
-                        desc = "DESCRIPTION ${offset}"
+                            index = offset,
+                            title = "TITLE ${offset}",
+                            desc = "DESCRIPTION ${offset}"
                     )
                 )
             }
@@ -44,5 +44,10 @@ class MainActivity : AppCompatActivity() {
         btnListTypeMultiRoom.setOnClickListener {
             startActivity(Intent(this, MultiRoomActivity::class.java))
         }
+
+        btnListTypeMultiRoomPaging.setOnClickListener {
+            startActivity(Intent(this, MultiRoomPagingActivity::class.java))
+        }
+
     }
 }

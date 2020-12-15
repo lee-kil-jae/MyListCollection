@@ -25,6 +25,7 @@
         <activity android:name=".view.MultiItemActivity"/>
         <activity android:name=".view.MultiPagingActivity"/>
         <activity android:name=".view.MultiRoomActivity"/>
+        <activity android:name=".view.MultiRoomPagingActivity"/>
     </application>
 
 </manifest>

@@ -9,7 +9,15 @@ import com.kiljae.mylistcollection.common.data.DataDefault
 interface MyDao {
 
     @Query("SELECT * FROM tableDataDefault")
-    fun getAll(): List<DataDefault>
+    fun getAll(): MutableList<DataDefault>
+
+    @Query("SELECT * FROM tableDataDefault WHERE `index` > :offset LIMIT :limit")
+    fun getDatas(offset: Int, limit: Int): MutableList<DataDefault>
+//    @Query("SELECT * FROM tableDataDefault WHERE 'index' > :offset")
+//    fun getDatas(offset: Int): List<DataDefault>
+
+    @Query("SELECT COUNT('index') FROM tableDataDefault")
+    fun getCount(): Int
 
     @Insert
     fun insert(dataDefault: DataDefault)
