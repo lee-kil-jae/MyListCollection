@@ -60,5 +60,4 @@ class ListAdapterMultiItem(var items : List<DataDefault> = arrayListOf(), var vm
             }
         }
     }
-
 }

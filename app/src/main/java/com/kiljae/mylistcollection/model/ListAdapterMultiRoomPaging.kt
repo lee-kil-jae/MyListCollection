@@ -45,20 +45,7 @@ class ListAdapterMultiRoomPaging(var vm : MultiRoomPagingViewModel)
         }else {
             ITEM
         }
-//        return when(position){
-//            0 -> HEADER
-//            else -> ITEM
-//        }
     }
-
-//    override fun getItemCount(): Int {
-//        return if(super.getItemCount() > 0){
-//            super.getItemCount() + 1
-//        }else{
-//            0
-//        }
-////        return super.getItemCount() + 1
-//    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         val inflater = LayoutInflater.from(parent.context)
