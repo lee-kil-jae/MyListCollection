@@ -6,9 +6,7 @@ import com.kiljae.mylistcollection.common.data.DataDefault
 import com.kiljae.mylistcollection.model.room.MyDao
 import com.kiljae.mylistcollection.model.room.MyDatabase
 import kotlinx.android.synthetic.main.activity_multi_room.*
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
+import kotlinx.coroutines.*
 
 class RoomPagingDefaultDataSource private constructor(val database: MyDao): ItemKeyedDataSource<Int, DataDefault>(){
 

@@ -29,10 +29,25 @@
             app:layout_constraintBottom_toBottomOf="parent"/>
     </androidx.appcompat.widget.Toolbar>
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnListTypeDefault"
+        android:id="@+id/btnListTypeOld"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button_round20_gray_white"
+        android:text="@string/listtype_oldstyle"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:textSize="@dimen/dp18"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnListTypeDefault"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/button_round20_orange_tomato"
@@ -40,7 +55,7 @@
         android:textColor="@color/colorWhite"
         android:textStyle="bold"
         android:textSize="@dimen/dp18"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/btnListTypeOld"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
     <androidx.appcompat.widget.AppCompatButton

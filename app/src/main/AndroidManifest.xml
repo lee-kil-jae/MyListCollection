@@ -21,6 +21,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".view.OldStyleActivity"/>
         <activity android:name=".view.DefaultActivity"/>
         <activity android:name=".view.MultiItemActivity"/>
         <activity android:name=".view.MultiPagingActivity"/>
