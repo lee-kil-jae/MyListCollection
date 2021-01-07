@@ -31,8 +31,8 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnListTypeOld"
         android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="50dp"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="30dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/button_round20_gray_white"
@@ -46,8 +46,8 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnListTypeDefault"
         android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="10dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/button_round20_orange_tomato"
@@ -61,8 +61,8 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnListTypeMultiItem"
         android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="10dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/button_round20_orange_tomato"
@@ -76,8 +76,8 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnListTypeMultiPaging"
         android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="10dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/button_round20_orange_tomato"
@@ -91,8 +91,8 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnRoomAdd"
         android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="10dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/button_round20_tomato_orange"
@@ -106,8 +106,8 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnListTypeMultiRoom"
         android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="10dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/button_round20_tomato_orange"
@@ -121,8 +121,8 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnListTypeMultiRoomPaging"
         android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="10dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/button_round20_darkbanana_orange"
@@ -131,6 +131,21 @@
         android:textStyle="bold"
         android:textSize="@dimen/dp18"
         app:layout_constraintTop_toBottomOf="@+id/btnListTypeMultiRoom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCustomDialog"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button_round20_gray_white"
+        android:text="@string/custom_dialog"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:textSize="@dimen/dp18"
+        app:layout_constraintTop_toBottomOf="@+id/btnListTypeMultiRoomPaging"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
